@@ -14,17 +14,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class LoginTrelloTests {
-    WebDriver wd;
-
-    @BeforeMethod
-    public void setUp() {
-        // Capabilities caps = new DesiredCapabilities();
-        wd = new ChromeDriver();
-        wd.manage().window().maximize();
-        wd.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        wd.get("https://trello.com/");
-    }
+public class LoginTrelloTests extends TestBase {
 
 
     @Test
@@ -57,18 +47,4 @@ public class LoginTrelloTests {
                         .xpath("//ul[@class = 'boards-page-board-section-list']")));
     }
 
-    public void click(By locator){
-        wd.findElement(locator).click();
-    }
-
-    public void type(By locator, String text){
-        click(locator);
-        wd.findElement(locator).clear();
-        wd.findElement(locator).sendKeys(text);
-    }
-
-    @AfterMethod
-    public void tearDown() {
-        wd.quit();
-    }
 }
