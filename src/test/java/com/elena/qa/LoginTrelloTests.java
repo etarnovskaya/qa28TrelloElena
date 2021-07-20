@@ -1,6 +1,5 @@
 package com.elena.qa;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -10,14 +9,14 @@ public class LoginTrelloTests extends TestBase {
     @Test
     public void loginLogoutTest() throws InterruptedException {
 
-        clickOnLoginButton();
-        fillLoginForm("rochman.elena@gmail.com", "12345.com");
-        confirmLogin();
+        app.getSession().clickOnLoginButton();
+        app.getSession().fillLoginForm("rochman.elena@gmail.com", "12345.com");
+        app.getSession().confirmLogin();
 
-        Assert.assertTrue(isAvatarPresent());
+        Assert.assertTrue(app.getSession().isAvatarPresentWait());
 
-        logout();
-        Assert.assertTrue(checkUserLoggedOut());
+        app.getSession().logout();
+        Assert.assertTrue(app.getSession().checkUserLoggedOut());
     }
 
 
