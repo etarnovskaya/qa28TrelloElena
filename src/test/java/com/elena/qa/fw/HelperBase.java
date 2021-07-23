@@ -1,4 +1,4 @@
-package com.elena.qa;
+package com.elena.qa.fw;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,9 +20,11 @@ public class HelperBase {
     }
 
     public void type(By locator, String text) {
-        click(locator);
-        wd.findElement(locator).clear();
-        wd.findElement(locator).sendKeys(text);
+        if(text!=null){
+            click(locator);
+            wd.findElement(locator).clear();
+            wd.findElement(locator).sendKeys(text);
+        }
     }
 
     public boolean isElementPresent(By locator) {
@@ -57,8 +59,12 @@ public class HelperBase {
         click(By.xpath("//*[@data-test-id='header-create-menu-button']"));
     }
 
-    public void returnOnHomePage() {
+    public void returnToHomePage() {
         waitForElement(By.cssSelector("[data-test-id*=header-home]"), 30);
         click(By.cssSelector("[data-test-id*=header-home]"));
+    }
+
+    public void confirmAction() {
+        click(By.cssSelector(".js-confirm"));
     }
 }

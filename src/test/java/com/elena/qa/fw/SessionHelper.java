@@ -1,5 +1,6 @@
-package com.elena.qa;
+package com.elena.qa.fw;
 
+import com.elena.qa.model.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -45,11 +46,11 @@ public class SessionHelper extends HelperBase {
         click(By.xpath("//button[@id='login-submit']"));
     }
 
-    public void fillLoginForm(String email, String password) throws InterruptedException {
-        type(By.xpath("//*[@name='user']"), email);
+    public void fillLoginForm(User user) throws InterruptedException {
+        type(By.xpath("//*[@name='user']"), user.getEmail());
         Thread.sleep(2000);
         click(By.xpath("//input[@id='login']"));
-        type(By.xpath("//*[@name='password']"), password);
+        type(By.xpath("//*[@name='password']"), user.getPassword());
     }
 
     public void clickOnLoginButton() {
@@ -62,5 +63,9 @@ public class SessionHelper extends HelperBase {
 
     public boolean isAvatarPresentWait() {
         return waitForElementPresentTryCatch(By.xpath("//ul[@class = 'boards-page-board-section-list']"), 20);
+    }
+
+    public boolean isErrorPresent() {
+       return isElementPresent(By.cssSelector("#password-error"));
     }
 }

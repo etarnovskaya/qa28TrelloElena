@@ -1,13 +1,11 @@
-package com.elena.qa;
+package com.elena.qa.fw;
 
+import com.elena.qa.model.Board;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.NoSuchElementException;
-
-public class BoardHelper extends HelperBase{
+public class BoardHelper extends HelperBase {
 
     public BoardHelper(WebDriver wd) {
         super(wd);
@@ -21,8 +19,8 @@ public class BoardHelper extends HelperBase{
         click(By.xpath("//*[@data-test-id='create-board-submit-button']"));
     }
 
-    public void fillBoardCreation(String boardName) {
-        type(By.xpath("//*[@data-test-id='create-board-title-input']"), boardName);
+    public void fillBoardCreation(Board board) {
+        type(By.xpath("//*[@data-test-id='create-board-title-input']"), board.getBoardName());
     }
 
     public void selectCreateBoard() {
@@ -34,14 +32,14 @@ public class BoardHelper extends HelperBase{
     }
 
     public void deleteBoard() {
-        if (!isElementDisplayed(By.cssSelector(".js-open-more"))) {
+        if (!isElementPresent(By.cssSelector(".js-open-more"))) {
             click(By.cssSelector(".icon-back"));
         }
         click(By.cssSelector(".js-open-more"));
         click(By.cssSelector(".js-close-board"));
-        click(By.cssSelector(".js-confirm"));
+        confirmAction();
         click(By.cssSelector(".js-delete"));
-        click(By.cssSelector(".js-confirm"));
+        confirmAction();
     }
 
     public void openMenu() {
@@ -56,5 +54,34 @@ public class BoardHelper extends HelperBase{
 
     public void selectFirstBoard() {
         click(By.xpath("//*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li"));
+    }
+
+    public void clearBoardList() throws InterruptedException {
+        int boardsCount = getBoardsCount();
+        while (boardsCount > 1) {
+            selectFirstBoard();
+            openMenu();
+            deleteBoard();
+            returnToHomePage();
+            Thread.sleep(4000);
+            boardsCount = getBoardsCount();
+        }
+    }
+
+    public boolean isThereABoard() {
+        return getBoardsCount()>0;
+    }
+
+    public void createBoard() {
+        clickOnPlusButton();
+        selectCreateBoard();
+        fillBoardCreation(new Board().setBoardName("experiment"));
+        confirmBoardCreation();
+        returnToHomePage();
+    }
+
+    public void editBoardName(String name) {
+        click(By.cssSelector(".mod-board-name"));
+        wd.findElement(By.cssSelector(".js-board-name-input")).sendKeys(name+ Keys.ENTER);
     }
 }
