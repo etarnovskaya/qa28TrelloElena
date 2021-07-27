@@ -75,7 +75,7 @@ public class BoardHelper extends HelperBase {
     public void createBoard() {
         clickOnPlusButton();
         selectCreateBoard();
-        fillBoardCreation(new Board().setBoardName("experiment"));
+        fillBoardCreation(new Board().withBoardName("experiment"));
         confirmBoardCreation();
         returnToHomePage();
     }
