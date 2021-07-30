@@ -10,6 +10,9 @@ public class BoardDeletionTests extends TestBase {
         if (!app.session().isAvatarPresent()) {
             app.session().login("rochman.elena@gmail.com", "12345.com");
         }
+        if(!app.board().isOnTheBoardsPage()){
+            app.board().returnToHomePage();
+        }
     }
 
     @Test

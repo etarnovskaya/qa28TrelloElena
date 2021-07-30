@@ -84,4 +84,8 @@ public class BoardHelper extends HelperBase {
         click(By.cssSelector(".mod-board-name"));
         wd.findElement(By.cssSelector(".js-board-name-input")).sendKeys(name+ Keys.ENTER);
     }
+
+    public boolean isOnTheBoardsPage() {
+        return isElementPresent(By.xpath("//*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li"));
+    }
 }

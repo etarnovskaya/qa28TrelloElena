@@ -2,6 +2,8 @@ package com.elena.qa.fw;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.BrowserType;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,9 +13,20 @@ public class ApplicationManager{
     SessionHelper session;
     ListHelper list;
     CardHelper card;
+    String browser;
+
+    public ApplicationManager(String browser) {
+        this.browser= browser;
+    }
+
 
     public void init() {
-        wd = new ChromeDriver();
+        if(browser.equals(BrowserType.CHROME)){
+            wd = new ChromeDriver();
+        }else if(browser.equals(BrowserType.FIREFOX)){
+            wd = new FirefoxDriver();
+        }
+
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         openSite("https://trello.com/");
