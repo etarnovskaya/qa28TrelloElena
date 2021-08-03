@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.elena.qa.tests.BoardCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-03T18:42:36" hostname="DESKTOP-S1IE1UQ" time="14.483">
+  <properties/>
+  <testcase name="boardCreationTest" classname="com.elena.qa.tests.BoardCreationTests" time="14.483"/>
+  <system-out><![CDATA[21:42:36 INFO  com.elena.qa.tests.TestBase - start test boardCreationTest
+21:42:36 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button'].
+21:42:36 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button']found.
+21:42:40 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li.
+21:42:40 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//lifound.
+21:42:40 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-menu-button'].
+21:42:40 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-menu-button']found.
+21:42:41 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-board-button'].
+21:42:41 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-board-button']found.
+21:42:41 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input'].
+21:42:41 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input']found.
+21:42:41 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input'].
+21:42:41 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input']found.
+21:42:42 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input'].
+21:42:42 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input']found.
+21:42:42 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-submit-button'].
+21:42:42 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-submit-button']found.
+21:42:43 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.cssSelector: .open-add-list.
+21:42:45 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.cssSelector: .open-add-listfound.
+21:42:45 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //h1.
+21:42:46 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //h1found.
+21:42:46 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.cssSelector: [data-test-id*=header-home].
+21:42:46 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.cssSelector: [data-test-id*=header-home]found.
+21:42:46 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.cssSelector: [data-test-id*=header-home].
+21:42:46 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.cssSelector: [data-test-id*=header-home]found.
+21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li.
+21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//lifound.
+21:42:51 INFO  com.elena.qa.tests.TestBase - stop test boardCreationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

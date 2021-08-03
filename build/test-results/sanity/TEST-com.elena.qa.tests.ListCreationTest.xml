@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.elena.qa.tests.ListCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-03T18:42:56" hostname="DESKTOP-S1IE1UQ" time="1.849">
+  <properties/>
+  <testcase name="testListCreation" classname="com.elena.qa.tests.ListCreationTest" time="1.849"/>
+  <system-out><![CDATA[21:42:55 INFO  com.elena.qa.tests.TestBase - start test testListCreation
+21:42:55 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button'].
+21:42:55 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button']found.
+21:42:55 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li.
+21:42:56 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//lifound.
+21:42:56 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li.
+21:42:56 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//lifound.
+21:42:56 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li.
+21:42:56 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//lifound.
+21:42:56 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.cssSelector: .js-add-list.
+21:42:56 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.cssSelector: .js-add-listfound.
+21:42:57 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.name: name.
+21:42:57 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.name: namefound.
+21:42:57 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.name: name.
+21:42:57 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.name: namefound.
+21:42:57 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.name: name.
+21:42:57 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.name: namefound.
+21:42:57 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.cssSelector: .js-save-edit.
+21:42:57 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.cssSelector: .js-save-editfound.
+21:42:57 INFO  com.elena.qa.tests.TestBase - stop test testListCreation
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

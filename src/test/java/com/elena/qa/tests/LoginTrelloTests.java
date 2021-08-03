@@ -1,11 +1,14 @@
 package com.elena.qa.tests;
 
 import com.elena.qa.model.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LoginTrelloTests extends TestBase {
+
     @BeforeMethod
     public void preconditions() {
         if (app.session().isAvatarPresent()) {
@@ -15,6 +18,7 @@ public class LoginTrelloTests extends TestBase {
 
     @Test
     public void loginTest() throws InterruptedException {
+      //  logger.info("login test started");
 
         app.session().clickOnLoginButton();
         //    app.getSession().fillLoginForm(new User ("rochman.elena@gmail.com", "12345.com"));
@@ -24,10 +28,12 @@ public class LoginTrelloTests extends TestBase {
         app.session().confirmLogin();
 
         Assert.assertTrue(app.session().isAvatarPresentWait());
+
+    //    logger.info("login test stopped");
     }
 
     @Test
-    public void logoutTest()  {
+    public void logoutTest() {
         app.session().logout();
         Assert.assertTrue(app.session().checkUserLoggedOut());
     }

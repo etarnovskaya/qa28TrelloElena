@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.elena.qa.tests.LoginTrelloTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-03T18:42:11" hostname="DESKTOP-S1IE1UQ" time="25.447">
+  <properties/>
+  <testcase name="loginTest" classname="com.elena.qa.tests.LoginTrelloTests" time="25.447"/>
+  <system-out><![CDATA[21:42:08 INFO  com.elena.qa.tests.TestBase - start test loginTest
+21:42:08 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button'].
+21:42:11 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button']found.
+21:42:11 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //a[@href='/login'].
+21:42:11 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //a[@href='/login']found.
+21:42:14 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@name='user'].
+21:42:14 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@name='user']found.
+21:42:14 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@name='user'].
+21:42:14 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@name='user']found.
+21:42:14 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@name='user'].
+21:42:15 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@name='user']found.
+21:42:17 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //input[@id='login'].
+21:42:17 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //input[@id='login']found.
+21:42:21 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@name='password'].
+21:42:21 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@name='password']found.
+21:42:21 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@name='password'].
+21:42:21 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@name='password']found.
+21:42:22 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@name='password'].
+21:42:22 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@name='password']found.
+21:42:22 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //button[@id='login-submit'].
+21:42:22 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //button[@id='login-submit']found.
+21:42:24 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //ul[@class = 'boards-page-board-section-list'].
+21:42:36 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //ul[@class = 'boards-page-board-section-list']found.
+21:42:36 INFO  com.elena.qa.tests.TestBase - stop test loginTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
