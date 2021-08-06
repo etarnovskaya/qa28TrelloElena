@@ -35,6 +35,9 @@ public class BoardHelper extends HelperBase {
         if (!isElementPresent(By.cssSelector(".js-open-more"))) {
             click(By.cssSelector(".icon-back"));
         }
+        if(isElementPresent(By.cssSelector("[title='QR Code']"))){
+            click(By.cssSelector("button[aria-label='Close popover']"));
+        }
         click(By.cssSelector(".js-open-more"));
         click(By.cssSelector(".js-close-board"));
         confirmAction();

@@ -12,4 +12,11 @@ public class Board {
         this.boardName = boardName;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "Board{" +
+                "boardName='" + boardName + '\'' +
+                '}';
+    }
 }

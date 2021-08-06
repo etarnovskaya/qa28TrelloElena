@@ -9,15 +9,26 @@ public class ListHelper extends HelperBase {
         super(wd);
     }
 
-    public void addNew(){
+    public void addNew() {
         click(By.cssSelector(".js-add-list"));
     }
 
-    public  void typeName(List list){
-       type(By.name("name"), list.getName());
+    public void typeName(List list) {
+        type(By.name("name"), list.getName());
     }
 
-    public void saveEdit(){
+    public void saveEdit() {
         click(By.cssSelector(".js-save-edit"));
+    }
+
+    public boolean isThereAList() {
+        return isElementPresent(By.cssSelector(".list"));
+    }
+
+    public void create() {
+        addNew();
+        typeName(new List().withName("autoTest"));
+        saveEdit();
+
     }
 }

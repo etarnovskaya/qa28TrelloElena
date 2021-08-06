@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.elena.qa.tests.LoginTrelloTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-03T17:31:19" hostname="DESKTOP-S1IE1UQ" time="23.043">
-  <properties/>
-  <testcase name="loginTest" classname="com.elena.qa.tests.LoginTrelloTests" time="23.043"/>
-  <system-out><![CDATA[20:31:19.470 [Test worker] INFO  com.elena.qa.tests.LoginTrelloTests - login test started
-20:31:42.508 [Test worker] INFO  com.elena.qa.tests.LoginTrelloTests - login test stopped
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

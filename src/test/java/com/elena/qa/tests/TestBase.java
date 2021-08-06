@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeSuite;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.util.Arrays;
 
 public class TestBase {
     protected static ApplicationManager app = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
@@ -59,13 +60,14 @@ public class TestBase {
 
     @AfterSuite(alwaysRun = true)
     public void tearDown() throws InterruptedException {
-        app.board().clearBoardList();
+       app.board().clearBoardList();
         app.stop();
     }
 
     @BeforeMethod
-    public void startLogger(Method m){
-        logger.info("start test " + m.getName());
+    public void startLogger(Method m, Object[] p){
+
+        logger.info("start test " + m.getName() + " with parameters " + Arrays.asList(p));
     }
 
     @AfterMethod(alwaysRun = true)
