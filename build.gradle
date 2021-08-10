@@ -26,16 +26,36 @@ task sanity(type: Test){
     if(project.hasProperty('browser')){
         systemProperty 'browser', "${browser}"
     }
+    if(project.hasProperty('target')){
+        systemProperty 'target', "${target}"
+    }
+}
+
+task sanityElena(type: Test){
+    useTestNG{
+        suites 'src/test/resources/testng-sanity.xml'
+    }
+    if(project.hasProperty('browser')){
+        systemProperty 'browser', "${browser}"
+    }
+        systemProperty 'target', "elena"
+
 }
 
 task debug(type: Test){
     useTestNG{
         suites 'src/test/resources/testng-debug.xml'
     }
+    if(project.hasProperty('target')){
+        systemProperty 'target', "${target}"
+    }
 }
 task clearBoards(type: Test){
     useTestNG{
         suites 'src/test/resources/testng-cleanBoard.xml'
+    }
+    if(project.hasProperty('target')){
+        systemProperty 'target', "${target}"
     }
 }
 

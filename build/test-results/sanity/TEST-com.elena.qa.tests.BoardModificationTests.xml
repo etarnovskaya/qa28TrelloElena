@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.elena.qa.tests.BoardModificationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-08-03T18:42:54" hostname="DESKTOP-S1IE1UQ" time="1.812">
+<testsuite name="com.elena.qa.tests.BoardModificationTests" tests="2" skipped="1" failures="1" errors="0" timestamp="2021-08-10T17:49:43" hostname="DESKTOP-S1IE1UQ" time="0.041">
   <properties/>
-  <testcase name="boardNameModificationTest" classname="com.elena.qa.tests.BoardModificationTests" time="1.812">
-    <failure message="org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document&#10;  (Session info: chrome=92.0.4515.107)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-S1IE1UQ', ip: '192.168.227.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Elena\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56634}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a60928c94a1eabf7ce1056016893a532" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=92.0.4515.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+  <testcase name="preconditions" classname="com.elena.qa.tests.BoardModificationTests" time="0.04">
+    <failure message="org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-S1IE1UQ', ip: '192.168.227.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 10748, moz:profile: C:\Users\Elena\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 92fa4a18-c9e3-40db-941d-a6955f7ac705" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-S1IE1UQ', ip: '192.168.227.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Elena\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56634}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a60928c94a1eabf7ce1056016893a532
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 10748, moz:profile: C:\Users\Elena\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 92fa4a18-c9e3-40db-941d-a6955f7ac705
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -20,24 +18,31 @@ Session ID: a60928c94a1eabf7ce1056016893a532
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.elena.qa.tests.TestBase$MyListener.onException(TestBase.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
-	at com.elena.qa.fw.HelperBase.click(HelperBase.java:19)
-	at com.elena.qa.fw.BoardHelper.selectFirstBoard(BoardHelper.java:56)
-	at com.elena.qa.tests.BoardModificationTests.boardNameModificationTest(BoardModificationTests.java:21)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy14.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy15.findElements(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElements(EventFiringWebDriver.java:182)
+	at com.elena.qa.fw.HelperBase.isElementPresent(HelperBase.java:35)
+	at com.elena.qa.fw.SessionHelper.isAvatarPresent(SessionHelper.java:61)
+	at com.elena.qa.tests.BoardModificationTests.preconditions(BoardModificationTests.java:10)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -87,35 +92,14 @@ Session ID: a60928c94a1eabf7ce1056016893a532
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <system-out><![CDATA[21:42:51 INFO  com.elena.qa.tests.TestBase - start test boardNameModificationTest
-21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button'].
-21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button']found.
-21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li.
-21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//lifound.
-21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-menu-button'].
-21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-menu-button']found.
-21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-board-button'].
-21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-board-button']found.
-21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input'].
-21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input']found.
-21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input'].
-21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input']found.
-21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input'].
-21:42:51 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input']found.
-21:42:52 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-submit-button'].
-21:42:52 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-submit-button']found.
-21:42:52 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.cssSelector: [data-test-id*=header-home].
-21:42:52 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.cssSelector: [data-test-id*=header-home]found.
-21:42:52 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.cssSelector: [data-test-id*=header-home].
-21:42:52 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.cssSelector: [data-test-id*=header-home]found.
-21:42:54 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li.
-21:42:54 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//lifound.
-21:42:54 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li.
-21:42:54 INFO  c.elena.qa.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//lifound.
-21:42:55 ERROR c.elena.qa.tests.TestBase$MyListener - !!!!TEST FAILED!!!!!
+  <testcase name="boardNameModificationTest" classname="com.elena.qa.tests.BoardModificationTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[20:49:43 INFO  com.elena.qa.tests.TestBase - start test boardNameModificationTest with parameters []
+20:49:43 INFO  c.elena.qa.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button'].
+20:49:43 ERROR c.elena.qa.tests.TestBase$MyListener - !!!!TEST FAILED!!!!!
 
-21:42:55 ERROR c.elena.qa.tests.TestBase$MyListener - screenshot SCREENSHOTS/screen-1628016175555.png
-21:42:55 INFO  com.elena.qa.tests.TestBase - stop test boardNameModificationTest
+20:49:43 INFO  com.elena.qa.tests.TestBase - stop test boardNameModificationTest
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -52,7 +52,7 @@ public class TestBase {
     }
 
     @BeforeSuite
-    public void setUp() {
+    public void setUp() throws IOException, InterruptedException {
         // Capabilities caps = new DesiredCapabilities();
         app.init();
     }
