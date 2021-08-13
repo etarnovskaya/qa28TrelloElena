@@ -9,7 +9,6 @@
                     <exclude name="logoutTest"/>
                 </methods>
             </class>
-            <class name="com.elena.qa.tests.CardCreationTest"/>
 
         </classes>
     </test>

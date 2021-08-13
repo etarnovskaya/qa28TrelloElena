@@ -13,6 +13,11 @@ public class UserModificationTests extends TestBase {
     }
 
     @Test
+    public void test() throws InterruptedException {
+     app.session().openTabAndSwitchToIt();
+    }
+
+    @Test
     public void testChangeUserAvatar() throws InterruptedException {
         app.session().clickOnAvatar();
         app.session().openUsersProfile();

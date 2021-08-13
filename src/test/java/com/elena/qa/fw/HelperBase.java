@@ -1,11 +1,15 @@
 package com.elena.qa.fw;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 
@@ -30,6 +34,15 @@ public class HelperBase {
             wd.findElement(locator).clear();
             wd.findElement(locator).sendKeys(text);
         }
+    }
+
+    public void openTabAndSwitchToIt() throws InterruptedException {
+        ((JavascriptExecutor)wd).executeScript("window.open()");
+
+        List<String> tabs = new ArrayList<>(wd.getWindowHandles());
+        wd.switchTo().window(tabs.get(1));
+        wd.navigate().to("https://google.com");
+        Thread.sleep(10000);
     }
 
     public void attachFile(By locator, File file) {
@@ -78,4 +91,14 @@ public class HelperBase {
     public void confirmAction() {
         click(By.cssSelector(".js-confirm"));
     }
+
+    public void selectFromDropDownByIndex(By locator, int index){
+        new Select(wd.findElement(locator)).selectByIndex(index);
+
+    }
+
+    public void selectFromDropDownByText(By locator, String text){
+        new Select(wd.findElement(locator)).selectByVisibleText(text);
+    }
+
 }

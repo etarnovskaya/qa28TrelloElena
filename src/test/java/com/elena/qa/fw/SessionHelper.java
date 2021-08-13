@@ -81,6 +81,8 @@ public class SessionHelper extends HelperBase {
         
     }
 
+
+
     public void goToAtlassianAccount() {
         click(By.cssSelector("[href$='manage-profile']"));
         ArrayList<String> tabs = new ArrayList<>(wd.getWindowHandles());
