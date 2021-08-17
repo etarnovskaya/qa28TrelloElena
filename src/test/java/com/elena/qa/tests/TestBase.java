@@ -60,7 +60,7 @@ public class TestBase {
 
     @AfterSuite(alwaysRun = true)
     public void tearDown() throws InterruptedException {
-       app.board().clearBoardList();
+      // app.board().clearBoardList();
         app.stop();
     }
 
