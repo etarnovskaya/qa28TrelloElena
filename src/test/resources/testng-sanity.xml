@@ -9,11 +9,11 @@
                     <exclude name="logoutTest"/>
                 </methods>
             </class>
-            <class name="com.elena.qa.tests.BoardCreationTests"/>
-            <class name="com.elena.qa.tests.BoardModificationTests"/>
-            <class name="com.elena.qa.tests.ListCreationTest"/>
-            <class name="com.elena.qa.tests.CardCreationTest"/>
-            <class name="com.elena.qa.tests.BoardDeletionTests"/>
+<!--            <class name="com.elena.qa.tests.BoardCreationTests"/>-->
+<!--            <class name="com.elena.qa.tests.BoardModificationTests"/>-->
+<!--            <class name="com.elena.qa.tests.ListCreationTest"/>-->
+<!--            <class name="com.elena.qa.tests.CardCreationTest"/>-->
+<!--            <class name="com.elena.qa.tests.BoardDeletionTests"/>-->
         </classes>
     </test>
 </suite>
