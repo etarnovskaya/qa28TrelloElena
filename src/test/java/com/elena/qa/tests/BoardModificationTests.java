@@ -22,6 +22,8 @@ public class BoardModificationTests extends  TestBase {
 
        app.board().editBoardName("Edited board");
        app.board().returnToHomePage();
+       
+       
        int after = app.board().getBoardsCount();
 
        Assert.assertEquals(after, before);
