@@ -14,7 +14,7 @@ public class BoardModificationTests extends  TestBase {
            app.board().createBoard();
        }
    }
-
+//my comment
    @Test
     public void boardNameModificationTest(){
        int before = app.board().getBoardsCount();
